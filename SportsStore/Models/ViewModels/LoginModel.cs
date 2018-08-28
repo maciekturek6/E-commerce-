@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
+namespace SportsStore.Models.ViewModels
+{
+    //gdy nieuwierzytelniony użytkownik wykona żądanie wymagające autoryzacji, nastąpi przekierowanie do adresu URL/Account/Login
+    public class LoginModel
+    {
+        [Required]
+        public string Name { get; set; }
+
+        [Required]
+        [UIHint("password")]
+        public string Password { get; set; }
+
+        public string ReturnUrl { get; set; } = "/";
+
+    }
+}

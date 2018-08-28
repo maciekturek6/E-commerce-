@@ -1,0 +1,7 @@
+﻿@using SportsStore.Models <!--  pozwala na użycie w widokach typów z przestrzeni nazw bez konieczności odwoływania się do niej-->
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelper
+@using SportsStore.Models.ViewModels
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using SportsStore.Infrastructure <!-- Dodanie do pliku importującego widoki przestrzeni nazw metody rozszerzającej, aby można było ją używać w widoku częściowym-->
+@addTagHelper SportsStore.Infrastructure.*, SportsStore     
+<!-- te polecenia nakazuje wyszukanie klas atrybutów pomocniczych znaczników w przestrzeni nazw-->
